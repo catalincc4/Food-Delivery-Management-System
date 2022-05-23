@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #A29B68;" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.presentation.AdministratorController">
+    <children>
+        <FontAwesomeIconView fx:id="cancelButton" glyphName="ARROW_CIRCLE_ALT_LEFT" layoutX="14.0" layoutY="781.0" onMouseClicked="#cancelButton" size="35" styleClass="backicon" text="" wrappingWidth="37.0" />
+      <TableView fx:id="productTable" layoutX="413.0" layoutY="-1.0" prefHeight="793.0" prefWidth="788.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="216.0" text="Title" />
+          <TableColumn fx:id="rating" prefWidth="89.0" text="Rating" />
+            <TableColumn fx:id="calories" prefWidth="74.0" text="Calories" />
+            <TableColumn fx:id="protein" prefWidth="71.0" text="Protein" />
+            <TableColumn fx:id="fat" prefWidth="71.0" text="Fat" />
+            <TableColumn fx:id="sodium" prefWidth="72.0" text="Sodium" />
+            <TableColumn fx:id="price" prefWidth="84.0" text="Price" />
+            <TableColumn fx:id="editColumn" prefWidth="122.0" />
+        </columns>
+      </TableView>
+      <ListView fx:id="listProduct" prefHeight="230.0" prefWidth="396.0" AnchorPane.bottomAnchor="570.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="804.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="393.0" orientation="VERTICAL" prefHeight="289.0" prefWidth="14.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="798.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton fx:id="createNewProductButton" buttonType="RAISED" layoutX="102.0" layoutY="285.0" onMouseClicked="#createNewProduct" prefHeight="35.0" prefWidth="195.0" ripplerFill="#eb0505" style="-fx-background-color: #000000;" text="Create new  product" textFill="#fffdfd">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="createNewProductButton4" buttonType="RAISED" layoutX="95.0" layoutY="450.0" onMouseClicked="#createNewReport" prefHeight="35.0" prefWidth="221.0" ripplerFill="#eb0505" style="-fx-background-color: #000000;" text="Create new  report" textFill="#fffdfd">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="numberOfTimes" alignment="TOP_CENTER" layoutX="21.0" layoutY="400.0" prefHeight="25.0" prefWidth="119.0" promptText="Number of times" styleClass="charm-text-field" />
+      <TextField fx:id="orderAmount" alignment="TOP_CENTER" layoutX="205.0" layoutY="400.0" promptText="Order amount" styleClass="charm-text-field" />
+      <JFXComboBox fx:id="startHour" layoutX="19.0" layoutY="413.0" prefHeight="25.0" prefWidth="64.0" promptText="HH" />
+      <JFXComboBox fx:id="startMinute" layoutX="81.0" layoutY="413.0" promptText="MM" />
+      <JFXComboBox fx:id="endHour" layoutX="220.0" layoutY="413.0" prefHeight="25.0" prefWidth="64.0" promptText="HH" />
+      <JFXComboBox fx:id="endMinute" layoutX="284.0" layoutY="413.0" promptText="MM" />
+      <Text fx:id="startHourText" disable="true" fill="#404040" layoutX="33.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start hour:">
+         <font>
+            <Font name="Times New Roman Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="endHourText" disable="true" fill="#464646" layoutX="231.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End hour:" />
+      <ComboBox fx:id="createByCombo" layoutX="23.0" layoutY="354.0" onAction="#showInputs" prefHeight="25.0" prefWidth="339.0" promptText="Create report by" styleClass="charm-text-field" />
+      <DatePicker fx:id="datePicker" layoutX="112.0" layoutY="401.0" promptText="Date" />
+      <TextField fx:id="nameOfTheProduct" layoutX="125.0" layoutY="248.0" promptText="Name of the product" styleClass="charm-text-field">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fx:id="refreshTableButton" fill="#112cda" glyphName="REFRESH" layoutX="355.0" layoutY="781.0" onMouseClicked="#refreshTable" selectionFill="#bf1313" size="30" styleClass="plusIcon" wrappingWidth="14.285714149475098" />
+    </children>
+</AnchorPane>

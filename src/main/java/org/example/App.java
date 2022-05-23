@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.businessLogic.User;
+import org.example.dataAccess.UserDAO;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * JavaFX App
@@ -17,12 +20,21 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("log-view"));
         stage.setScene(scene);
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
+        if(fxml.equals("ADMINISTRATOR-view") || fxml.equals("CLIENT-view") || fxml.equals("EMPLOYEE-view") ){
+            scene.getWindow().setHeight(840);
+            scene.getWindow().setWidth(1215);
+        }
+        if(fxml.equals("log-view")){
+            scene.getWindow().setHeight(615);
+            scene.getWindow().setWidth(840);
+        }
+
         scene.setRoot(loadFXML(fxml));
     }
 

@@ -1,0 +1,6 @@
+Order number 4
+Client :mihai
+title='Ethiopian Spice Tea ', rating=5.0, calories=23, protein=1, fat=0, sodium=13, price=49
+title='Smoked Caviar and Hummus on Pita Toasts ', rating=5.0, calories=23, protein=1, fat=2, sodium=49, price=79
+title='Barbecued Shrimp ', rating=3.75, calories=23, protein=4, fat=0, sodium=205, price=71
+Total order: 199

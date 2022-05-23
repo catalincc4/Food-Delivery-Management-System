@@ -1,0 +1,3 @@
+Orders between start hour: 0 and end hour: 23
+orderID=2, clientID='florin', orderDate=Mon May 23 14:16:40 EEST 2022
+orderID=1, clientID='mihai', orderDate=Mon May 23 14:16:40 EEST 2022

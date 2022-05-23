@@ -1,0 +1,12 @@
+Order number 3
+Client :mihai
+Order number 3
+Client :mihai
+title='Fresh Corn Tortillas ', rating=3.75, calories=23, protein=1, fat=2, sodium=61, price=79
+Order number 3
+Client :mihai
+Order number 3
+Client :mihai
+title='Fresh Corn Tortillas ', rating=3.75, calories=23, protein=1, fat=2, sodium=61, price=79
+title='Quick & Spicy Asian Pickles ', rating=5.0, calories=23, protein=1, fat=0, sodium=128, price=48
+Total order: 127

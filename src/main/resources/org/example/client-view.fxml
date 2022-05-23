@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #A29B68;" styleClass="anchorPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.presentation.ClientController">
+    <children>
+        <FontAwesomeIconView fx:id="cancelButton" glyphName="ARROW_CIRCLE_ALT_LEFT" layoutX="14.0" layoutY="781.0" onMouseClicked="#cancelButton" size="35" styleClass="backicon" text="" wrappingWidth="37.0" />
+        <TableView fx:id="productTable" layoutX="413.0" layoutY="136.0" prefHeight="664.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="136.0">
+            <columns>
+                <TableColumn fx:id="title" prefWidth="216.0" text="Title" />
+                <TableColumn fx:id="rating" prefWidth="89.0" text="Rating" />
+                <TableColumn fx:id="calories" prefWidth="74.0" text="Calories" />
+                <TableColumn fx:id="protein" prefWidth="71.0" text="Protein" />
+                <TableColumn fx:id="fat" prefWidth="71.0" text="Fat" />
+                <TableColumn fx:id="sodium" prefWidth="72.0" text="Sodium" />
+                <TableColumn fx:id="price" prefWidth="84.0" text="Price" />
+                <TableColumn fx:id="editColumn" prefWidth="122.0" />
+            </columns>
+        </TableView>
+        <ListView fx:id="listProduct" prefHeight="382.0" prefWidth="396.0" AnchorPane.bottomAnchor="418.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="804.0" AnchorPane.topAnchor="0.0" />
+        <Separator layoutX="393.0" orientation="VERTICAL" prefHeight="289.0" prefWidth="14.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="798.0" AnchorPane.topAnchor="0.0" />
+        <JFXButton fx:id="createNewOrderButton" buttonType="RAISED" layoutX="101.0" layoutY="401.0" onMouseClicked="#createNewOrder" prefHeight="35.0" prefWidth="195.0" ripplerFill="#eb0505" style="-fx-background-color: #000000;" text="Create new  order" textFill="#fffdfd">
+            <font>
+                <Font name="Times New Roman Italic" size="14.0" />
+            </font>
+        </JFXButton>
+      <TextField fx:id="wordKey" layoutX="418.0" layoutY="37.0" prefHeight="25.0" prefWidth="727.0" styleClass="charm-text-field" />
+      <Text layoutX="418.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter By:">
+         <font>
+            <Font name="Times New Roman Italic" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="startCalories" layoutX="418.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Calories" styleClass="charm-text-field" />
+      <TextField fx:id="endCalories" layoutX="495.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Calories" styleClass="charm-text-field" />
+      <Text layoutX="482.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="startProtein" layoutX="578.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Protein" styleClass="charm-text-field" />
+      <TextField fx:id="endProtein" layoutX="655.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Protein" styleClass="charm-text-field" />
+      <Text layoutX="642.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="startFat" layoutX="741.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Fat" styleClass="charm-text-field" />
+      <TextField fx:id="endFat" layoutX="818.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Fat" styleClass="charm-text-field" />
+      <Text layoutX="805.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="startSodium" layoutX="901.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Sodium" styleClass="charm-text-field" />
+      <TextField fx:id="endSodium" layoutX="978.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Sodium" styleClass="charm-text-field" />
+      <Text layoutX="965.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="startPrice" layoutX="1052.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Price" styleClass="charm-text-field" />
+      <TextField fx:id="endPrice" layoutX="1129.0" layoutY="85.0" prefHeight="25.0" prefWidth="64.0" promptText="Price" styleClass="charm-text-field" />
+      <Text layoutX="1116.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Separator layoutX="565.0" layoutY="76.0" orientation="VERTICAL" prefHeight="44.0" prefWidth="7.0" />
+      <Separator layoutX="725.0" layoutY="76.0" orientation="VERTICAL" prefHeight="44.0" prefWidth="7.0" />
+      <Separator layoutX="888.0" layoutY="75.0" orientation="VERTICAL" prefHeight="44.0" prefWidth="7.0" />
+      <Separator layoutX="1049.0" layoutY="75.0" orientation="VERTICAL" prefHeight="44.0" prefWidth="7.0" AnchorPane.rightAnchor="147.0" />
+      <FontAwesomeIconView fx:id="searchButton" glyphName="SEARCH" layoutX="1155.0" layoutY="54.0" onMouseClicked="#search" size="28" styleClass="backicon" />
+    </children>
+</AnchorPane>

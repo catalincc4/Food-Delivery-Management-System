@@ -1,0 +1,63 @@
+
+.charm-text-field:hover {
+    -fx-border-width: 0 0 2px 0, 0 0 0 0;
+    -fx-border-insets: 0 0 -2px 0, 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(#164a94, 50%) transparent, transparent transparent transparent transparent;
+}
+
+.charm-text-field:focused{
+    -fx-border-width: 0 0 2px 0, 0 0 0 0;
+    -fx-border-insets: 0 0 -2px 0, 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(#164a94, 50%) transparent, transparent transparent transparent transparent;
+}
+
+.charm-text-field:hover:focused {
+    -fx-border-width: 0 0 2px 0, 0 0 0 0;
+    -fx-border-insets: 0 0 -2px 0, 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(#164a94, 50%) transparent, transparent transparent transparent transparent;
+}
+
+.charm-text-field{
+    -fx-prompt-text-fill: #262525;
+    -fx-border-width: 0 0 2px 0, 0 0 0 0;
+    -fx-border-insets: 0 0 -2px 0, 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #000000 transparent, transparent transparent transparent transparent;
+}
+
+.editIcon{
+    -glyph-size:28px;
+    -fx-fill:green;
+}
+
+.editIcon:pressed{
+    -fx-translate-y: 3px;
+}
+
+.deleteIcon{
+    -fx-fill:red;
+    -glyph-size:28px;
+}
+
+.deleteIcon:pressed{
+    -fx-translate-y: 3px;
+}
+
+.textFieldError{
+    -fx-color: red;
+    -fx-border-width: 3px;
+}
+.backicon:pressed{
+    -fx-translate-y: 3px;
+}
+
+.plusIcon{
+    -glyph-size:28px;
+}
+
+.plusIcon:pressed{
+    -fx-translate-y: 3px;
+}
