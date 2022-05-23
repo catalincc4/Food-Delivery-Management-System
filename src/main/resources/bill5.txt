@@ -1,0 +1,7 @@
+Order number 5
+Client :mihai
+title='Squash and Sweet-Potato Soup with Chipotle Sauce ', rating=4.375, calories=68, protein=1, fat=1, sodium=37, price=91
+title='Chilled Minted Zucchini Soup ', rating=2.5, calories=70, protein=5, fat=2, sodium=55, price=96
+title='Chilled and Dilled Avgolemono Soup ', rating=3.75, calories=87, protein=4, fat=3, sodium=49, price=98
+title='Yellow Squash and Bell Pepper Soup ', rating=4.375, calories=87, protein=3, fat=6, sodium=22, price=71
+Total order: 356

@@ -1,0 +1,6 @@
+Order number 6
+Client :mihai
+title='Cilantro-Tomato Salsa ', rating=3.75, calories=23, protein=1, fat=0, sodium=7, price=19
+title='Shrimp Sates with Spiced Pistachio Chutney ', rating=3.75, calories=23, protein=1, fat=2, sodium=4, price=78
+title='Arugula Salad with Heirloom Tomatoes and Red Onion ', rating=2.5, calories=24, protein=1, fat=0, sodium=12, price=21
+Total order: 118

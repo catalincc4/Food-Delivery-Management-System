@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 /**
  * Delivery Service class
  */
-public class DeliveryService implements IDeliveryServiceProcessing, Serializable {
+public class DeliveryService extends Observer implements IDeliveryServiceProcessing, Serializable {
 
     /**
      * list of products available for purchase
@@ -199,7 +199,6 @@ public class DeliveryService implements IDeliveryServiceProcessing, Serializable
             if(menuItems.size() > 0){
                 Order order = new Order(orderID,userName, new Date());
                 orderListHashMap.put(order, menuItems);
-                orderToDo.add(order);
                 String[] text={"Order number " + orderID + "\n" + "Client :" + userName+"\n"};
                 menuItems.forEach(e-> text[0] +=  e.toString());
                 text[0] += "Total order: " + price(menuItems);
@@ -224,4 +223,8 @@ public class DeliveryService implements IDeliveryServiceProcessing, Serializable
         return n;
     }
 
+    @Override
+    public void update(Order order) {
+       orderToDo.add(order);
+    }
 }
